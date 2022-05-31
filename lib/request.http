@@ -1,0 +1,32 @@
+### obtener publicacion
+GET https://sasvin.live/api/notes
+
+### creando una nueva publicacion
+POST https://sasvin.live/api/notes
+Content-Type: application/json
+
+{
+    "number": 2,
+    "title": "Prueba 1",
+    "description": "Grupo 1"
+}
+
+### obtener mensaje
+GET https://sasvin.live/api/notes/id
+
+### obtener mensaje no nota
+GET https://sasvin.live/api/notes/62941d12be553ee0e93217a2
+
+### eliminar publicacion
+DELETE https://sasvin.live/api/notes/id
+
+### obtener publicaciones en true
+GET https://sasvin.live/api/notes/important
+
+### actualizando una publicacion por titulo
+PUT https://sasvin.live/api/notes/629303114516a9038298d13f
+Content-Type: application/json
+
+{
+    "title": "Prueba actualizada"
+}
